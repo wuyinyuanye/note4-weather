@@ -1,0 +1,8 @@
+{
+  "city": "南京",
+  "latitude": 32.06167,
+  "longitude": 118.77778,
+  "target": "192.0.2.10",
+  "expected_id": "YOUR_DEVICE_ID",
+  "weather_interval_seconds": 3600
+}

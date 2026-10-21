@@ -1,0 +1,20 @@
+# Local settings and personal runtime data
+config.json
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+**/target/
+.DS_Store
+runtime/
+*.log
+*.jsonl
+*.pid
+album/
+weather-cache.json
+device-status.json
+last-display.json
+initial.png
+current.png

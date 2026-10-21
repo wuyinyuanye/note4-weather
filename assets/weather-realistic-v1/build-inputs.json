@@ -1,0 +1,42 @@
+{
+  "mode": "built-in imagegen",
+  "reference": "../partly-cloudy.png",
+  "assets": [
+    {
+      "name": "clear-day",
+      "condition": "CLEAR DAY. A single pale luminous natural sun disc with subtle soft light falloff, no cloud and no rays drawn as lines. Centered silver-white sphere/disc with softly readable edge on transparent background, broad continuous soft-gray tones. Match the reference sun material and soft directional realism, not a cartoon icon."
+    },
+    {
+      "name": "clear-night",
+      "condition": "CLEAR NIGHT. A single realistic natural gibbous moon with subtle craters and broad silver-gray surface shading, no cloud, no stars. Moon centered on transparent background, finely textured photographic lunar surface, clear round silhouette. Symbolic phase only, no astronomical claim. Match the realistic companion of the reference sun."
+    },
+    {
+      "name": "overcast",
+      "condition": "OVERCAST. Remove the sun entirely. Preserve the exact billowing cloud body, silhouette, size, perspective and texture of the reference, centered, with softly shaded gray undersides and white/silver highlights. Cloud only, no celestial body, precipitation or decorations."
+    },
+    {
+      "name": "rain",
+      "condition": "RAIN. Remove the sun. Keep the reference's detailed realistic billowing cloud body and lighting, very slightly darker underside. Beneath the cloud add a small number of clearly visible natural slanted rain streaks/drops, enough spacing for 400px rendering. Rain clearly separate from the cloud underside, no blue tint. Single cloud-plus-rain cutout, all background transparent."
+    },
+    {
+      "name": "snow",
+      "condition": "SNOW. Remove the sun. Keep the reference's realistic detailed cloud body and lighting. Beneath it add a few softly realistic falling snow crystals/flakes with silver-gray shading, distinct from rain droplets and widely spaced for 400px rendering. No cartoon snowflake outlines. Single cloud-plus-snow cutout on genuine transparent background."
+    },
+    {
+      "name": "fog",
+      "condition": "FOG. Remove the sun. Use low-lying realistic soft gray fog banks/layers as the subject, related to the reference cloud's natural volumetric texture but flatter and less billowing, clear horizontal atmospheric layers with a few open gaps, legible at 400px. No stylized bars, no ground, trees, landscape or rectangular background. Fog only, transparent beyond wisps."
+    },
+    {
+      "name": "sleet",
+      "condition": "FREEZING RAIN. Remove the sun. Keep the reference's realistic detailed cloud body and lighting. Below it show a few natural rain streaks and small translucent icy droplets/pellets with neutral-gray highlights, sparse and legible at 400px. No snowflake symbols, no blue. Clearly a frozen-precipitation weather cutout, transparent background."
+    },
+    {
+      "name": "thunderstorms-rain",
+      "condition": "THUNDERSTORM WITH RAIN. Remove the sun. Keep the reference's detailed billowing cloud style with darker dramatic gray underside. Beneath it show one small natural branching lightning flash in silver-white with a narrow charcoal contrast edge and several rain streaks, legible against white after compositing. No cartoon zigzag bolt or yellow, no landscape or sky rectangle. Cloud-plus-lightning-and-rain isolated on real transparency."
+    },
+    {
+      "name": "partly-cloudy-night",
+      "condition": "Keep original B cloud body; replace sun with realistic cratered moon. Preserve transparency."
+    }
+  ]
+}

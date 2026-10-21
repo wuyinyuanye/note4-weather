@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/itopinion/zectrix-local-push-sdk",
+  "commit": "c71412f3f1e1d039bf4f09b9e7867c4661ae1237",
+  "version": "0.1.0",
+  "firmware": "3.7.2",
+  "image_format": "Gray16",
+  "source": "400x300 continuous-tone PNG; no local quantization or dithering"
+}
