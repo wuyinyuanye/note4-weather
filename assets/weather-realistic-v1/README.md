@@ -30,3 +30,9 @@
 > Use case: lighting-weather. Edit target: the supplied partly-cloudy weather asset, the established master asset for a grayscale e-paper weather application. Create its NIGHT PARTLY CLOUDY companion. Preserve the SAME detailed natural billowing cumulus cloud silhouette, position, proportions, fine volumetric texture, broad gray shadow masses and silver-white highlights. Change only the celestial object behind upper left: replace the sun with a natural photographic gibbous moon with subtle lunar craters, its lower portion naturally occluded by the unchanged clouds. The moon must be recognizable as moon, with no symbolic crescent outline, no rays, no drawn stars. Keep a predominantly white/silver-gray cloud with readable darker undersides, not a black night scene. Same camera, framing, scale, white light direction, sophisticated photorealistic weather cutout style as supplied asset, not cartoon, not vector, not rounded toy cloud. GENUINELY TRANSPARENT BACKGROUND AND CLEAN ALPHA outside the cloud and moon. No black/gray rectangular background, no square glow backdrop, no scene, no text, no border, no UI, no noise or halftone/dither. Output one single matching night partly cloudy asset.
 
 生成结果做一次本地形态/透明度检查、整套对照与400×300主屏/总览预览；用户新一轮实屏风格验收另计，不把生成完成等同于全部实屏验收。
+
+## 日晴图更新（2026-10-22）
+
+日晴改用 `clear-day-illustrated-v7.png`，沿用原B晴间多云参考，目标是介于卡通与写实之间的细腻天气插画：柔和明暗层次、连续灰度、整圈细短柔光。`manifest.json` 更新为版本7（与开发图稿编号一致），包含新文件SHA-256及首页安全框；首页、此刻与七日继续共用这张日晴素材。其余九款及天气代码映射保持。旧 `clear-day.png` 保留供回退。
+
+本轮仅同步最新设计，日晴的表面纹理与柔光效果仍待打磨，尚未通过用户视觉验收。文档预览使用模拟数据，不表示实屏效果。前几轮已否定的尖刺、碎光与概念图未收录。完整本次生成提示词见 [clear-day-illustrated-v7-prompt.txt](clear-day-illustrated-v7-prompt.txt)。

@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "style": "original B photorealistic silver-gray weather",
+  "version": 7,
+  "style": "original B semi-realistic silver-gray weather illustration",
   "master": "original",
   "assets": {
     "original": {
@@ -18,8 +18,14 @@
       ]
     },
     "clear-day": {
-      "file": "clear-day.png",
-      "sha256": "ff304c39130b3ce73584ef15d9c3e4f5baf00384cb676a1d80cc14210c5caf38"
+      "file": "clear-day-illustrated-v7.png",
+      "sha256": "b368a0d4136ab41fe4ed8cf7811f4a70a97408174cc79a4862c0a0ebc148f137",
+      "hero_box": [
+        26,
+        38,
+        368,
+        181
+      ]
     },
     "clear-night": {
       "file": "clear-night.png",

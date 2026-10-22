@@ -96,6 +96,9 @@ class WeatherTests(unittest.TestCase):
     def test_details_is_quiet_and_fetch_runs_hourly(self):
         with tempfile.TemporaryDirectory() as d:
             app=App(DEFAULTS,Path(d));app.action('details');app.last_fetch=10
+            # Keep the initial render on the fixture date so running this test
+            # on another day does not trigger the intentional midnight redraw.
+            app.render(now=NOW)
             with patch.object(app,'fetch') as fetch,patch.object(app,'render') as repaint:
                 app.tick(now=NOW+timedelta(minutes=1),monotonic_now=70)
                 app.tick(now=NOW+timedelta(minutes=59),monotonic_now=3609)

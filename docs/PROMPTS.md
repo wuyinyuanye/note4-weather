@@ -19,3 +19,7 @@ A single beautifully crafted monochrome partly cloudy weather icon, isolated on 
 使用母版 `assets/partly-cloudy.png` 作为参考图，输出带透明 alpha 的单张 PNG；不要生成整张 UI，不加文字、边框、黑色底或抖色。将结果合成到 400×300 灰度画布后，由官方 SDK 转为 Gray16。
 
 生成图像具有随机性，复用提示词不保证逐像素相同；可直接使用仓库内已经生成的 PNG。manifest 中保留 SHA-256 校验。夜间月亮是示意，不代表实时月相。
+
+## 2026-10-22 日晴修订
+
+用户选定的方向是介于卡通与写实之间的细腻天气插画，参考原B晴间多云的云层层次和十六灰表现；此前开发需求中的“写实”不应理解为天文照片或金属质感。日晴使用 [本次完整提示词](../assets/weather-realistic-v1/clear-day-illustrated-v7-prompt.txt)，仍需后续视觉打磨。日晴旧提示词保留为历史生成记录，当前生效资产以manifest为准。
