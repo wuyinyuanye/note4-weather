@@ -1,0 +1,25 @@
+name: Shanghai Disneyland two-source comparison
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'experiments/shanghai_disney_compare.py'
+      - '.github/workflows/shanghai-disney-compare.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare simultaneously sampled sources
+        run: python3 experiments/shanghai_disney_compare.py
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shanghai-disney-compare-${{ github.run_id }}
+          path: disney-compare-output/
+          retention-days: 7
