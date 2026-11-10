@@ -1,0 +1,30 @@
+name: Shanghai Disneyland API cloud smoke test
+
+on:
+  push:
+    branches:
+      - experiment/shanghai-disney-api-probe-20261110
+    paths:
+      - 'experiments/shanghai_disney_probe.py'
+      - '.github/workflows/shanghai-disney-api-probe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe upstream REST API
+        run: python3 experiments/shanghai_disney_probe.py
+      - name: Preserve request evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shanghai-disney-probe-${{ github.run_id }}
+          path: disney-probe-output/
+          retention-days: 7
+          if-no-files-found: warn
