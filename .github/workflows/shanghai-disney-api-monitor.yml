@@ -1,6 +1,11 @@
 name: Shanghai Disneyland queue monitor
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'experiments/shanghai_disney_monitor.py'
+      - '.github/workflows/shanghai-disney-api-monitor.yml'
   workflow_dispatch:
   schedule:
     - cron: '*/15 * * * *'
